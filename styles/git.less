@@ -5,11 +5,11 @@
 // Used to color git status
 
 .status          { color: @text-color; }
-.status-added    { color: @bliss-green; } // green
-.status-ignored  { color: @bliss-gray; }  // faded
-.status-modified { color: @bliss-yellow; } // orange
-.status-removed  { color: @bliss-red; }   // red
-.status-renamed  { color: @bliss-blue; }    // blue
+.status-added    { color: @boss-green; } // green
+.status-ignored  { color: @boss-gray; }  // faded
+.status-modified { color: @boss-yellow; } // orange
+.status-removed  { color: @boss-red; }   // red
+.status-renamed  { color: @boss-blue; }    // blue
 
 atom-text-editor .gutter .line-number.git-line-removed, .gutter .line-number.git-line-removed {
   border-left: 2px solid #bf616a;
@@ -26,15 +26,15 @@ atom-text-editor .gutter .line-number.git-line-removed:before, .gutter .line-num
 
 .github-StagingView-list {
   .icon.icon-diff-removed:before {
-    color: @bliss-red;
+    color: @boss-red;
   }
 
   .icon.icon-diff-modified:before {
-    color: @bliss-yellow;
+    color: @boss-yellow;
   }
 
   .icon.icon-diff-added:before {
-    color: @bliss-green;
+    color: @boss-green;
   }
 }
 
@@ -61,9 +61,9 @@ atom-text-editor .gutter .line-number.git-line-removed:before, .gutter .line-num
     }
   }
 
-  .generate-list-item-status-color(@bliss-green, added);
-  .generate-list-item-status-color(@bliss-gray, ignored);
-  .generate-list-item-status-color(@bliss-yellow, modified);
-  .generate-list-item-status-color(@bliss-red, removed);
-  .generate-list-item-status-color(@bliss-orange, renamed);
+  .generate-list-item-status-color(@boss-green, added);
+  .generate-list-item-status-color(@boss-gray, ignored);
+  .generate-list-item-status-color(@boss-yellow, modified);
+  .generate-list-item-status-color(@boss-red, removed);
+  .generate-list-item-status-color(@boss-orange, renamed);
 }

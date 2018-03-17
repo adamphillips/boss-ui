@@ -1,17 +1,16 @@
 {
-  "name": "bliss-ui",
+  "name": "boss-ui",
   "theme": "ui",
-  "version": "0.6.0",
+  "version": "0.1.0",
   "description": "Ultra-minimalist theme.",
   "keywords": [
-    "bliss",
-    "monochrome",
+    "boss",
     "ui",
     "theme",
     "ocean",
     "spacegray"
   ],
-  "repository": "https://github.com/saadq/bliss-ui",
+  "repository": "https://github.com/adamphillips/boss-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
