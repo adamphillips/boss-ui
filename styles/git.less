@@ -20,6 +20,14 @@ atom-text-editor .gutter .line-number.git-line-removed:before, .gutter .line-num
   content: none;
 }
 
+.icon:before {
+  opacity: 0.5;
+}
+
+.selected .icon:before {
+  opacity: 1;
+}
+
 .github-StagingView-list {
   .icon.icon-diff-removed:before {
     color: @boss-red;
