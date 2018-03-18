@@ -16,14 +16,17 @@
     padding-left: @component-padding/2;
     border-bottom: 1px dotted @base-border-color;
     color: @text-color-dim;
+    margin-left: 1px;
     .transition;
 
     // We want to highlight the background of the list items because we dont know their size.
     &.selected {
       color: lighten(@emphasis-color, 15%);
-      background-color: @emphasis-color;
+      background-color: darken(@emphasis-color, 32%);
       z-index: 15;
       &:before{ display: none; }
+      border-left: 1px solid white;
+      margin-left: 0;
 
       .character-match {
         color: darken(@emphasis-color, 15%);
