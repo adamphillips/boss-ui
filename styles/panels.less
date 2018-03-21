@@ -66,6 +66,8 @@ atom-panel.modal > .select-list {
 
 .panel-bottom {
   atom-text-editor.editor.mini:last-of-type {
-    border-bottom: none;
+    &.is-focused {
+      background-color: lighten(@input-background-color, 5%);
+    }
   }
 }
