@@ -68,6 +68,15 @@ atom-panel.modal > .select-list {
   atom-text-editor.editor.mini:last-of-type {
     &.is-focused {
       background-color: lighten(@input-background-color, 5%);
+      border: 1px solid @boss-red;
+    }
+  }
+
+  & .has-results {
+    atom-text-editor.editor.mini:last-of-type {
+      &.is-focused {
+        border: 1px solid @boss-green;
+      }
     }
   }
 }
