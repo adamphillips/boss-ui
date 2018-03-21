@@ -29,22 +29,27 @@
 
 atom-panel.modal {
   position: absolute;
-  border: 1px solid @overlay-border-color;
   border-top: none;
   top: 0;
-  left: 0;
-  margin-left: 0;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 0px;
+  width: 500px;
+  min-height: 300px;
   z-index: 100;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
+  padding: 0;
   background: fadeout(@base-background-color, 5%);
 }
 
 atom-panel.modal > .select-list {
   min-width: 500px;
+  border: 1px solid @pane-item-border-color;
+  border-top: 0;
+  padding: @component-padding;
+  background: @base-background-color;
 }
 
 .inset-panel {
